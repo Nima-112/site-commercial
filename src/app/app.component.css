@@ -1,16 +1,15 @@
 #contact {
     display: flex;
-    justify-content: space-between; 
     background-color: #171b2d; /* Dark background */
     color: #ffffff; /* Text color */
-    padding: 60px 20px;
     align-items: center;
+    text-align: center;
 
   }
   .contact-form {
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Spacing between form fields */
+    /* Spacing between form fields */
     flex: 1; /* Take up available space on the left */
     width: 50%;
     margin-left: 100px;
@@ -63,5 +62,6 @@ footer {
   }
  
   .col{
-    padding-left: 120px;
+    width: 200% ;
+    padding-left: 220px;
   }
