@@ -1,0 +1,92 @@
+.row {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.card img{
+    padding: 20px 20px ;
+}
+.card-image-top {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-bottom: 1px solid  #ddd;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+h5.text-center {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.star i {
+    color: #FFD700; /* Star color */
+}
+
+.star i.far {
+    color: #ccc; /* Unchecked star */
+}
+
+.star {
+    margin-bottom: 15px;
+}
+
+.btn {
+    text-align: center;
+}
+
+.btn button {
+    background-color: #7627e4; /* Button color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn button:hover {
+    background-color: #320375; 
+}
+
+
+@media (max-width: 768px) {
+    .col-md-4 {
+        flex: 0 0 48%; 
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .col-md-4 {
+        flex: 0 0 100%;  
+    }
+
+    .card-body {
+        padding: 15px;  
+    }
+
+    h5.text-center {
+        font-size: 1rem;  
+    }
+
+    .btn button {
+        font-size: 0.9rem; 
+    }
+}

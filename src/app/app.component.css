@@ -1,0 +1,67 @@
+#contact {
+    display: flex;
+    justify-content: space-between; 
+    background-color: #171b2d; /* Dark background */
+    color: #ffffff; /* Text color */
+    padding: 60px 20px;
+    align-items: center;
+
+  }
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Spacing between form fields */
+    flex: 1; /* Take up available space on the left */
+    width: 50%;
+    margin-left: 100px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+  }
+  
+  label {
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+  
+  input, textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #83d5ca;
+    background-color: #f9f9f9;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  input:focus, textarea:focus {
+    outline: none;
+    border-color: #4fe1ce; /* Focus border color */
+  }
+  .button {
+    background-color: #7627e4; /* Button color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #320375; 
+}
+footer {
+    position: relative; /* Ensure it's in the normal document flow */
+    margin-top: 20px; /* Add some spacing to avoid collision with other sections */
+    padding-top: 30px;
+    padding-bottom: 20px;
+    clear: both; /* Clear any floated elements above */
+  }
+ 
+  .col{
+    padding-left: 120px;
+  }

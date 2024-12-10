@@ -1,0 +1,18 @@
+<div class="row gy-4">
+ 
+  <div class="col-md-4" *ngFor="let produit of produits; let i = index">
+    <div class="card">
+      <img class="card-image-top"  [src]="'product' + (i + 1) + '.png'" alt="Product image">
+      <div class="card-body">
+        <h5 class="text-center">{{ produit.prix }} MAD</h5>
+        <div class="star text-center">
+          <i class="fa fa-star checked" *ngFor="let star of [].constructor(4); let i = index"></i> 
+          <i class="fa fa-star" *ngFor="let star of [].constructor(1); let i = index"></i> 
+        </div>
+        <div class="btn">
+          <button type="button" (click)="ajouterAuPanier(produit)">Add <i class="bi bi-cart"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
